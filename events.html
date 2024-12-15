@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELECTROYNZ'25</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/event.css">
+    <style>
+        /* Custom Modal Styling */
+    
+        .modal-content {
+            background: #000000;
+        }
+        .modal-header {
+            background: #ff6200;
+            color: rgb(9, 9, 9);
+        }
+        .modal-body {
+            font-size: 1rem;
+        }
+        .event-rule {
+            margin-bottom: 10px;
+        }
+      .event-day {
+        background-color: yellow;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      .event-table {
+        border: 2px solid #333;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 40px;
+      }
+      .event-table th, .event-table td {
+        text-align: center;
+        vertical-align: middle;
+      }
+      .h2{
+        text-align: center;
+      }
+      .header1{
+        text-align: center;
+        -webkit-text-fill-color: aliceblue;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 40px;
+      
+      }
+ 
+    </style>
+</head>
+<body id="eventsbody">
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <header class="site-navbar py-3" role="banner">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-11 col-xl-2">
+                        <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">ELECTROYNZ<span class="text-primary">2K25</span></a></h1>
+                        <div class="header1">EVENTS</div>
+                    </div>
+                    <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="active"><a href="events.html">Events</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li class="cta"><a href="marvel-registration">REGISTER</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+                        <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="header">
+            <h1></h1>
+            <p></p>
+        </div>
+
+        <div class="events-container">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="./images/wallpaperflare.com_wallpaper (1).jpg" alt="Event Image" class="event-image">
+                <div class="event-info">
+                    <span class="event-date">Oct 25, 2024</span>
+                    <h2 class="event-title">Infinity Tech Expo</h2>
+                    <p class="event-description">Experience the latest in tech with Marvel-inspired installations and exhibits.</p>
+                    <button class="register-btn" data-toggle="modal" data-target="#event1Modal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src="./images/1605746.jpg" alt="Event Image" class="event-image">
+                <div class="event-info">
+                    <span class="event-date">Nov 15, 2024</span>
+                    <h2 class="event-title">Stark Innovations Workshop</h2>
+                    <p class="event-description">A day of learning and innovation inspired by Stark Industries.</p>
+                    <button class="register-btn" data-toggle="modal" data-target="#event2Modal">Learn More</button>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card">
+                <img src="./images/Thor  avengers.jpg" alt="Event Image" class="event-image">
+                <div class="event-info">
+                    <span class="event-date">Dec 5, 2024</span>
+                    <h2 class="event-title">Vibranium Tech Fair</h2>
+                    <p class="event-description">Join us to explore cutting-edge technologies straight from Wakanda.</p>
+                    <button class="register-btn" data-toggle="modal" data-target="#event3Modal">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals for Event Details -->
+        <div class="modal fade" id="event1Modal" tabindex="-1" role="dialog" aria-labelledby="event1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event1ModalLabel">Infinity Tech Expo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="event-rule"><strong>Timing:</strong> 9:00 AM - 5:00 PM</p>
+                        <p class="event-rule"><strong>Venue:</strong> Main Auditorium</p>
+                        <p class="event-rule"><strong>Rules:</strong></p>
+                        <ul>
+                            <li>Teams must have 3-5 members.</li>
+                            <li>Use of external tools is allowed.</li>
+                            <li>Each team will have 20 minutes to present.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="event2Modal" tabindex="-1" role="dialog" aria-labelledby="event2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event2ModalLabel">Stark Innovations Workshop</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="event-rule"><strong>Timing:</strong> 10:00 AM - 4:00 PM</p>
+                        <p class="event-rule"><strong>Venue:</strong> Seminar Hall</p>
+                        <p class="event-rule"><strong>Rules:</strong></p>
+                        <ul>
+                            <li>Individual and team participation allowed.</li>
+                            <li>Bring your own laptops and kits.</li>
+                            <li>Workshop materials will be provided.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="event3Modal" tabindex="-1" role="dialog" aria-labelledby="event3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event3ModalLabel">Vibranium Tech Fair</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="event-rule"><strong>Timing:</strong> 11:00 AM - 6:00 PM</p>
+                        <p class="event-rule"><strong>Venue:</strong> Technology Arena</p>
+                        <p class="event-rule"><strong>Rules:</strong></p>
+                        <ul>
+                            <li>Open to students and professionals.</li>
+                            <li>No prior registration required.</li>
+                            <li>Interactive technology demonstrations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-5">
+                                
+                                <h2 class="footer-heading mb-4">About ELECTROYNZ</h2>
+                                <p>ELECTROYNZ'25 is a premier technology event showcasing innovation, creativity, and cutting-edge tech from around the world.</p>
+                            </div>
+                            <div class="col-md-3 ml-auto">
+                                <h2 class="footer-heading mb-4">Quick Links</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>&copy; 2024 ELECTROYNZ. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+    </html>
