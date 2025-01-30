@@ -1,3 +1,15 @@
 {
-    "sqltools.connections": []
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PG",
+            "database": "event_registration",
+            "username": "postgres",
+            "password": "Ragul@2004",
+            "connectionTimeout": 30
+        }
+    ]
 }
