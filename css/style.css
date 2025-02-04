@@ -90,6 +90,20 @@
   background-position: top center;
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  #aboutBody {
+    background-attachment: scroll; /* Prevents the fixed behavior on mobile */
+    background-position: center center; /* Adjusts the image positioning */
+    background-size: cover; /* Ensures it covers the screen properly */
+  }
+  #contactBody {
+    background-attachment: scroll; /* Prevents the fixed behavior on mobile */
+    background-position: center center; /* Adjusts the image positioning */
+    background-size: cover; /* Ensures it covers the screen properly */
+  }
+  
+  
+}
 
 body {
   line-height: 1.7;
