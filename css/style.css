@@ -74,16 +74,6 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
-  #contactBody {
-    background-attachment: scroll; /* Disable fixed background on mobile */
-    background-position: center center; /* Ensure the image stays centered on smaller screens */
-  }
-  #aboutBody{
-    background-attachment: scroll; /* Disable fixed background on mobile */
-    background-position: center center; /* Ensure the image stays centered on smaller screens */
-  }
-}
 
 
 
