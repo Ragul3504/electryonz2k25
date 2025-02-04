@@ -70,9 +70,21 @@
   background-image: url('../images/about1.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 768px) {
+  #contactBody {
+    background-attachment: scroll; /* Disable fixed background on mobile */
+    background-position: center center; /* Ensure the image stays centered on smaller screens */
+  }
+  #aboutBody{
+    background-attachment: scroll; /* Disable fixed background on mobile */
+    background-position: center center; /* Ensure the image stays centered on smaller screens */
+  }
+}
+
 
 
 #contactBody {
@@ -81,6 +93,8 @@
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
+
 }
 
 #registerBody {
@@ -89,21 +103,10 @@
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 100% auto;
+
 }
-@media (max-width: 768px) {
-  #aboutBody {
-    background-attachment: scroll; /* Prevents the fixed behavior on mobile */
-    background-position: center center; /* Adjusts the image positioning */
-    background-size: cover; /* Ensures it covers the screen properly */
-  }
-  #contactBody {
-    background-attachment: scroll; /* Prevents the fixed behavior on mobile */
-    background-position: center center; /* Adjusts the image positioning */
-    background-size: cover; /* Ensures it covers the screen properly */
-  }
-  
-  
-}
+
 
 body {
   line-height: 1.7;
