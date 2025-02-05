@@ -67,7 +67,7 @@
 }
 
 #aboutBody {
-  background-image: url('../images/about1.jpg');
+  background-image: url('../images/aboutus.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -78,24 +78,14 @@
 
 
 #contactBody {
-  background-image: url('../images/contactus.png'); /*#232531;*/
+  background-image: url('../images/eagle.png'); /*#232531;*/
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
 
 }
 
-#registerBody {
-  background-image: url('../images/uwp3844646.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-
-}
 
 
 body {
