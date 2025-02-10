@@ -6,16 +6,7 @@
     font-family: 'Montserret', sans-serif;
 }
 
-body {
-    background: linear-gradient(135deg, #141e30, #243b55);
-    background-image: url('/images/event.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 20px;
-}
+
 
 .header {
     text-align: center;
